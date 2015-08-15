@@ -1,7 +1,4 @@
 # Site settings
 title: Gamers Who Code
 baseurl: /site
-url: "http://gamerswhocode.org"
-
-# Build settings
-markdown: kramdown
+encoding: utf-8
