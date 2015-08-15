@@ -9,8 +9,8 @@ rawr-invader is a game where dinosaurs have a chance to defend themselves from e
 
 **Weapons the dinosaurs will have:**
 
--Deadly eye-laser
--Jetpack
+- Deadly eye-laser
+- Jetpack
 
 **Enemies:**
 
