@@ -1,6 +1,6 @@
 # Site settings
 title: Gamers Who Code
-baseurl: ""
+baseurl: /site
 url: "http://gamerswhocode.org"
 
 # Build settings
