@@ -1,0 +1,7 @@
+# Site settings
+title: Gamers Who Code
+baseurl: ""
+url: "http://gamerswhocode.org"
+
+# Build settings
+markdown: kramdown
