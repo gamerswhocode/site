@@ -1,0 +1,194 @@
+html{
+    font-size:100%;
+}
+
+body{
+    background: #ffffff;
+    text-align: center;
+}
+
+/*========================================================================
+              SECTIONS ( BACKGROUNDs,COLORS, OVERLAY & LAYOUTS )
+==========================================================================*/
+section,
+.header-section .color-overlay,
+.color-overlay{
+    padding-top: 30px;
+    padding-bottom: 75px
+}
+
+.sub-section .color-overlay{
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+.section-bg-color {
+    background: rgba(222, 222, 222, 0.24) none repeat scroll 0 0;
+}
+
+.section-heading-white h2, .section-heading-white h4{
+    color:#ffffff;
+}
+
+.color-overlay {
+    background: rgba(0, 0, 0, 0.69) none repeat scroll 0 0;
+}
+
+.standard-button:hover, .standard-button:active, .standard-button:focus{
+    text-decoration: none;
+}
+
+
+.section-heading, .section-heading-white {
+    padding-top: 60px;
+    padding-bottom:60px;
+}
+
+
+
+/*========================================================================
+                            HEADER
+==========================================================================*/
+.header-section {
+    background: rgba(0, 0, 0, 0);
+}
+
+.header-text {
+    margin-bottom: 50px;
+    margin-top: 70px;
+    padding:10px;
+}
+
+.sub-header-text {
+    margin-top:10px;
+    color: #fff;
+}
+
+.header-text h1{
+    color: #fff
+}
+
+.header-icon {
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 45px;
+    height: 55px;
+    line-height: 90px;
+    margin: 20px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    width: 55px;
+    z-index: 1;
+}
+
+/* EFFECT SUB CIRCLE */
+.header-icon:after {
+    border-radius: 50%;
+    box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    content:'';
+    height: 100%;
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+}
+
+/* ICON */
+.header-icon:before {
+    -webkit-font-smoothing: antialiased;
+    display: block;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    line-height: 55px;
+    text-transform: none;
+}
+
+
+/* CIRCLE */
+.header-icon.header-icon-effect {
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 1);
+    -webkit-transition: background 0.2s, color 0.2s;
+    -moz-transition: background 0.2s, color 0.2s;
+    transition: background 0.2s, color 0.2s;
+}
+
+.header-icon.header-icon-effect:hover, .header-icon.header-icon-effect:hover i {
+    color: #fff;
+}
+
+.header-icon.header-icon-effect:after {
+    left: -8px;
+    opacity: 1;
+    padding: 8px;
+    top: -8px;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+    z-index: -1;
+}
+
+
+.header-icon.header-icon-effect.sub-circle:after {
+    box-shadow: 3px 3px rgba(128, 255, 0, 1);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    -webkit-transition: opacity 0.2s, -webkit-transform 0.2s;
+    -moz-transition: opacity 0.2s, -moz-transform 0.2s;
+    transition: opacity 0.2s, transform 0.2s;
+}
+
+.header-icon.header-icon-effect.sub-circle:before {
+    opacity: 0.7;
+    -webkit-transform: scale(0.7);
+    -moz-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    transform: scale(0.7);
+    -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
+    -moz-transition: -moz-transform 0.2s, opacity 0.2s;
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+
+
+/*========================================================================
+                            DESCRIPTION
+==========================================================================*/
+
+.feature-heading {
+    padding-bottom: 60px;
+    padding-top: 60px;
+}
+
+.feature-icon {
+    border: 2px solid;
+    border-radius: 50%;
+    display: inline-block;
+    font-size: 70px;
+    padding: 20px 30px;
+}
+
+.feature-content {
+    margin-top: 20px;
+    padding-top: 10px;
+}
+
+.section-heading h4,
+.section-heading h5,
+.sub-header-text h1 div,
+.feature-icon {
+    color: #56C201;
+}
+
+.section-heading p {
+    font-size: 18px;
+    margin-top: 20px;
+}

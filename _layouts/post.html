@@ -1,17 +1,35 @@
 ---
 layout: default
 ---
-<div class="news">
-  <div class="content">
+<section class="sub-section">
+  <div class="color-overlay">
+    <div class="container">
+      <div class="sub-header-text">
 
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-  </header>
-
-  <article class="post-content">
-    {{ content }}
-  </article>
+        <h1>
+          <div class="fa fa-th"></div>
+          <span> {{ page.title }}</span>
+        </h1>
+      </div>
+    </div>
   </div>
+</section>
 
-</div>
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="section-heading text-left">
+          <h5>{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}}</h5>
+          <p>
+            {% if page.meta %} • {{ page.meta }}{% endif %}
+
+
+            {{ content }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

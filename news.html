@@ -1,21 +1,49 @@
 ---
-layout: post
+layout: default
 ---
 
-<div class="home">
+<section class="sub-section">
+    <div class="color-overlay">
+        <div class="container">
+            <div class="sub-header-text">
 
-    <h1 class="page-heading">News</h1>
+                <h1>
+                    <div class="fa fa-th"></div>
+                    <span> News </span>
+                </h1>
+            </div>
+        </div>
+    </div>
+</section>
 
-    <ul class="post-list">
-        {% for post in site.posts %}
-        <li>
-            <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="left-about text-left">
 
-            <h2>
-                <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-            </h2>
-        </li>
-        {% endfor %}
-    </ul>
+                    <div class="left-about-content">
 
-</div>
+                        <div class="about-lists">
+
+                            {% for post in site.posts %}
+                                <div class="single-list-item">
+                                    <div class="pull-left">
+                                        <i class="fa fa-share"></i>
+                                    </div>
+
+                                    <div class="about-list-content">
+                                        <h6>{{ post.date | date: "%b %-d, %Y" }}</h6>
+                                        <p><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></p>
+                                    </div>
+                                </div>
+
+                            {% endfor %}
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
