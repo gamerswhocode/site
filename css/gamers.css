@@ -192,3 +192,8 @@ section,
     font-size: 18px;
     margin-top: 20px;
 }
+.home-logo:before{
+    content: url(../img/gamers-who-code-logo.png);
+    float: left;
+    padding-right: 5px;
+}
