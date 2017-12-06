@@ -47,4 +47,21 @@
     $(".navbar").removeClass("d-none");
   })
 
+
+var exampleCallback = function() {
+        console.log('Order complete!');
+    };
+
+    window.EBWidgets.createWidget({
+        // Required
+        widgetType: 'checkout',
+        eventId: '39903042073',
+        iframeContainerId: 'eventbrite-widget-container-39903042073',
+
+        // Optional
+        iframeContainerHeight: 600,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
+        onOrderComplete: exampleCallback  // Method called when an order has successfully completed
+    });
 })(jQuery); // End of use strict
+
+
